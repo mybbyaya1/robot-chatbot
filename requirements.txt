@@ -1,8 +1,6 @@
---use-deprecated=legacy-resolver
---no-cache-dir
-streamlit==1.32.0
-langchain==0.1.20
-langchain-community==0.0.38
-dashscope==1.17.0
-chromadb==0.5.4
+streamlit==1.55.0
+langchain==1.2.10
+langchain-community==0.4.1
+dashscope==1.25.12
+chromadb==1.5.1
 pyyaml==6.0
