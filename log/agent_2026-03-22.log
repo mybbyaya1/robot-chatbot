@@ -1,0 +1,176 @@
+2026-03-22 01:37:24,673 - agent - INFO -vector_store.py:74 - [加载知识库]文件内容为空:D:\lanchain_智能体\pythonProject\data\扫地机器人 100 问 2.txt.跳过
+2026-03-22 01:38:00,931 - agent - INFO -vector_store.py:74 - [加载知识库]文件内容为空:D:\lanchain_智能体\pythonProject\data\扫地机器人 100 问 2.txt.跳过
+2026-03-22 01:38:00,975 - agent - ERROR -vector_store.py:85 - [加载知识库]失败:D:\lanchain_智能体\pythonProject\data\扫地机器人 100 问.pdf,`pypdf` package not found, please install it with `pip install pypdf`
+2026-03-22 01:40:30,093 - agent - ERROR -vector_store.py:85 - [加载知识库]失败:D:\lanchain_智能体\pythonProject\data\扫地机器人 100 问.pdf,`pypdf` package not found, please install it with `pip install pypdf`
+2026-03-22 01:40:30,094 - agent - INFO -vector_store.py:74 - [加载知识库]文件内容为空:D:\lanchain_智能体\pythonProject\data\扫地机器人100问2.txt.跳过
+2026-03-22 01:43:18,809 - agent - ERROR -vector_store.py:85 - [加载知识库]失败:D:\lanchain_智能体\pythonProject\data\扫地机器人100问.pdf,`pypdf` package not found, please install it with `pip install pypdf`
+2026-03-22 01:43:18,809 - agent - INFO -vector_store.py:74 - [加载知识库]文件内容为空:D:\lanchain_智能体\pythonProject\data\扫地机器人100问1.txt.跳过
+2026-03-22 01:43:18,809 - agent - INFO -vector_store.py:74 - [加载知识库]文件内容为空:D:\lanchain_智能体\pythonProject\data\扫地机器人100问2.txt.跳过
+2026-03-22 01:49:20,169 - agent - ERROR -vector_store.py:85 - [加载知识库]失败:D:\lanchain_智能体\pythonProject\data\扫地机器人100问.pdf,`pypdf` package not found, please install it with `pip install pypdf`
+2026-03-22 01:49:22,694 - agent - INFO -vector_store.py:83 - [加载知识库]成功:D:\lanchain_智能体\pythonProject\data\扫地机器人100问1.txt
+2026-03-22 01:49:22,695 - agent - INFO -vector_store.py:68 - 文件已处理过:D:\lanchain_智能体\pythonProject\data\扫地机器人100问2.txt
+2026-03-22 01:50:24,759 - agent - ERROR -vector_store.py:85 - [加载知识库]失败:D:\lanchain_智能体\pythonProject\data\扫地机器人100问.pdf,`pypdf` package not found, please install it with `pip install pypdf`
+2026-03-22 01:50:24,759 - agent - INFO -vector_store.py:68 - 文件已处理过:D:\lanchain_智能体\pythonProject\data\扫地机器人100问1.txt
+2026-03-22 01:50:24,759 - agent - INFO -vector_store.py:68 - 文件已处理过:D:\lanchain_智能体\pythonProject\data\扫地机器人100问2.txt
+2026-03-22 01:54:46,505 - agent - INFO -vector_store.py:83 - [加载知识库]成功:D:\lanchain_智能体\pythonProject\data\扫地机器人100问.pdf
+2026-03-22 01:54:46,505 - agent - INFO -vector_store.py:68 - 文件已处理过:D:\lanchain_智能体\pythonProject\data\扫地机器人100问1.txt
+2026-03-22 01:54:46,506 - agent - INFO -vector_store.py:68 - 文件已处理过:D:\lanchain_智能体\pythonProject\data\扫地机器人100问2.txt
+2026-03-22 10:05:31,547 - agent - INFO -vector_store.py:68 - 文件已处理过:D:\lanchain_智能体\pythonProject\data\扫地机器人100问.pdf
+2026-03-22 10:05:31,580 - agent - INFO -vector_store.py:68 - 文件已处理过:D:\lanchain_智能体\pythonProject\data\扫地机器人100问1.txt
+2026-03-22 10:05:31,582 - agent - INFO -vector_store.py:68 - 文件已处理过:D:\lanchain_智能体\pythonProject\data\扫地机器人100问2.txt
+2026-03-22 18:36:58,161 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有1条消息。
+2026-03-22 18:36:58,418 - agent - INFO -middleware.py:38 - [log_before_model]开始HumanMessage,消息内容：扫地机器人在我所在的地区，现在这样的温度下如何保养
+2026-03-22 18:37:02,247 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：get_user_location
+2026-03-22 18:37:02,247 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{}
+2026-03-22 18:37:02,333 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='广州' name='get_user_location' tool_call_id='call_b1e5c42f697f43aaae79c338'
+2026-03-22 18:37:02,334 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有3条消息。
+2026-03-22 18:37:02,334 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：广州
+2026-03-22 18:37:05,460 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：get_weather
+2026-03-22 18:37:05,460 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'city': '广州'}
+2026-03-22 18:37:05,547 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='广州的天气是晴天，气温22度，风向北风。' name='get_weather' tool_call_id='call_9ba8cfd78a194e2c975dc157'
+2026-03-22 18:37:05,550 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有5条消息。
+2026-03-22 18:37:05,551 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：广州的天气是晴天，气温22度，风向北风。
+2026-03-22 18:37:11,936 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：rag_summarize
+2026-03-22 18:37:11,937 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'query': '扫地机器人在22度晴天环境下如何保养'}
+2026-03-22 18:37:15,274 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='参考资料中未提及扫地机器人在22度晴天环境下的保养方法。' name='rag_summarize' tool_call_id='call_ebd8d7ac64204e5e8ecce913'
+2026-03-22 18:37:15,275 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有7条消息。
+2026-03-22 18:37:15,275 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：参考资料中未提及扫地机器人在22度晴天环境下的保养方法。
+2026-03-22 18:37:18,080 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：rag_summarize
+2026-03-22 18:37:18,080 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'query': '扫地机器人日常保养建议'}
+2026-03-22 18:37:21,561 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='定期清理尘盒和滤网，检查并清除滚刷及边刷缠绕的毛发杂物，保持传感器清洁，避免在潮湿或有水区域使用，及时充电并定期检查电池状态。' name='rag_summarize' tool_call_id='call_7eb284aa454245f0a15629dc'
+2026-03-22 18:37:21,563 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有9条消息。
+2026-03-22 18:37:21,563 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：定期清理尘盒和滤网，检查并清除滚刷及边刷缠绕的毛发杂物，保持传感器清洁，避免在潮湿或有水区域使用，及时充电并定期检查电池状态。
+2026-03-22 18:46:10,581 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有1条消息。
+2026-03-22 18:46:10,581 - agent - INFO -middleware.py:38 - [log_before_model]开始HumanMessage,消息内容：给我生成我的使用报告
+2026-03-22 18:46:16,202 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：get_user_id
+2026-03-22 18:46:16,202 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{}
+2026-03-22 18:46:16,203 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='用户ID是1005' name='get_user_id' tool_call_id='call_41e2c0a3dbb14edd96613103'
+2026-03-22 18:46:16,203 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有3条消息。
+2026-03-22 18:46:16,203 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：用户ID是1005
+2026-03-22 18:46:22,446 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：get_current_month
+2026-03-22 18:46:22,446 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{}
+2026-03-22 18:46:22,447 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='2025-12' name='get_current_month' tool_call_id='call_0f040ca2f5e04552bdf06b40'
+2026-03-22 18:46:22,448 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有5条消息。
+2026-03-22 18:46:22,448 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：2025-12
+2026-03-22 18:46:33,328 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：fill_context_for_report
+2026-03-22 18:46:33,328 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{}
+2026-03-22 18:46:33,329 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='fill_context_for_report' name='fill_context_for_report' tool_call_id='call_5dc5179fcd874b02a3ebc9f2'
+2026-03-22 18:46:33,329 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有7条消息。
+2026-03-22 18:46:33,329 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：fill_context_for_report
+2026-03-22 18:46:37,194 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：fetch_external_data
+2026-03-22 18:46:37,194 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'user_id': '1005', 'month': '2025-12'}
+2026-03-22 18:46:37,195 - agent - WARNING -agent_tools.py:81 - 未找到用户1005在2025-12的使用记录
+2026-03-22 18:46:37,195 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='' name='fetch_external_data' tool_call_id='call_d0466e59d65e452fa16f886b'
+2026-03-22 18:46:37,196 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有9条消息。
+2026-03-22 18:46:37,196 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：
+2026-03-22 18:46:41,991 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：rag_summarize
+2026-03-22 18:46:41,991 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'query': '扫地机器人日常保养和使用建议'}
+2026-03-22 18:46:46,105 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='定期清理滚刷和边刷上的缠绕物，及时清空尘盒并清洗滤网（若为可水洗型），避免在潮湿地面使用，确保充电座周围无障碍物，定期检查传感器是否被灰尘覆盖并清洁，长时间不用时应关闭电源并存放于干燥处。' name='rag_summarize' tool_call_id='call_df44a690d685466d8cff0289'
+2026-03-22 18:46:46,105 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有11条消息。
+2026-03-22 18:46:46,105 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：定期清理滚刷和边刷上的缠绕物，及时清空尘盒并清洗滤网（若为可水洗型），避免在潮湿地面使用，确保充电座周围无障碍物，定期检查传感器是否被灰尘覆盖并清洁，长时间不用时应关闭电源并存放于干燥处。
+2026-03-22 18:46:48,085 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：rag_summarize
+2026-03-22 18:46:48,085 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'query': '扫地机器人耗材更换周期'}
+2026-03-22 18:46:55,320 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='扫地机器人的耗材更换周期通常为：边刷和滚刷每3-6个月更换一次，滤网每1-3个月清洗或更换，电池寿命一般为1-2年，具体周期需根据使用频率和产品说明书建议进行调整。' name='rag_summarize' tool_call_id='call_045854acdf7e4754b4e3b673'
+2026-03-22 18:46:55,321 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有13条消息。
+2026-03-22 18:46:55,321 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：扫地机器人的耗材更换周期通常为：边刷和滚刷每3-6个月更换一次，滤网每1-3个月清洗或更换，电池寿命一般为1-2年，具体周期需根据使用频率和产品说明书建议进行调整。
+2026-03-22 18:50:42,686 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有1条消息。
+2026-03-22 18:50:42,686 - agent - INFO -middleware.py:38 - [log_before_model]开始HumanMessage,消息内容：给我生成我的使用报告
+2026-03-22 18:50:47,274 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：get_user_id
+2026-03-22 18:50:47,274 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{}
+2026-03-22 18:50:47,275 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='用户ID是1001' name='get_user_id' tool_call_id='call_4eba72acbf224419ad8fd6d3'
+2026-03-22 18:50:47,275 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有3条消息。
+2026-03-22 18:50:47,275 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：用户ID是1001
+2026-03-22 18:50:55,886 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：get_current_month
+2026-03-22 18:50:55,886 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{}
+2026-03-22 18:50:55,887 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='2025-03' name='get_current_month' tool_call_id='call_e573ee46723a46b79ce75358'
+2026-03-22 18:50:55,887 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有5条消息。
+2026-03-22 18:50:55,887 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：2025-03
+2026-03-22 18:51:00,474 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：fill_context_for_report
+2026-03-22 18:51:00,474 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{}
+2026-03-22 18:51:00,475 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='fill_context_for_report' name='fill_context_for_report' tool_call_id='call_f989333dc8e64ebb8c460925'
+2026-03-22 18:51:00,475 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有7条消息。
+2026-03-22 18:51:00,476 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：fill_context_for_report
+2026-03-22 18:51:06,110 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：fetch_external_data
+2026-03-22 18:51:06,111 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'user_id': '1001', 'month': '2025-03'}
+2026-03-22 18:51:06,115 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='{"特征": "65㎡公寓 | 单身 | 木地板", "效率": "覆盖率:87%\\\\n日均清扫:47㎡\\\\n漏扫区域:沙发底部（高度不足）", "耗材": "主刷寿命:剩余50天\\\\nHEPA滤网:剩余30%", "对比": "优于70%同面积用户（清洁频率更高）"}' name='fetch_external_data' tool_call_id='call_6775e6468100441c82dcefa3'
+2026-03-22 18:51:06,116 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有9条消息。
+2026-03-22 18:51:06,116 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：{"特征": "65㎡公寓 | 单身 | 木地板", "效率": "覆盖率:87%\\n日均清扫:47㎡\\n漏扫区域:沙发底部（高度不足）", "耗材": "主刷寿命:剩余50天\\nHEPA滤网:剩余30%", "对比": "优于70%同面积用户（清洁频率更高）"}
+2026-03-22 18:51:09,343 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：rag_summarize
+2026-03-22 18:51:09,344 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'query': '扫地机器人主刷和HEPA滤网保养建议'}
+2026-03-22 18:51:13,172 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='主刷应定期清理缠绕的毛发和杂物，建议每周检查并清洁一次；HEPA滤网需每月取出清理灰尘，若为可水洗类型，可用清水冲洗并彻底晾干后再装回，不可暴晒或烘干，若为不可水洗类型则建议每3-6个月更换一次。' name='rag_summarize' tool_call_id='call_6034d3e3315148938f61bfb8'
+2026-03-22 18:51:13,173 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有11条消息。
+2026-03-22 18:51:13,173 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：主刷应定期清理缠绕的毛发和杂物，建议每周检查并清洁一次；HEPA滤网需每月取出清理灰尘，若为可水洗类型，可用清水冲洗并彻底晾干后再装回，不可暴晒或烘干，若为不可水洗类型则建议每3-6个月更换一次。
+2026-03-22 18:51:17,263 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：rag_summarize
+2026-03-22 18:51:17,263 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'query': '扫地机器人无法清洁沙发底部等低矮区域的解决方案'}
+2026-03-22 18:51:20,699 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='选择机身高度低于沙发底部间隙的扫地机器人型号，确保其能顺利进入低矮区域进行清洁。' name='rag_summarize' tool_call_id='call_b78297967af14e8197761226'
+2026-03-22 18:51:20,702 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有13条消息。
+2026-03-22 18:51:20,703 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：选择机身高度低于沙发底部间隙的扫地机器人型号，确保其能顺利进入低矮区域进行清洁。
+2026-03-22 19:43:24,946 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有1条消息。
+2026-03-22 19:43:24,947 - agent - INFO -middleware.py:38 - [log_before_model]开始HumanMessage,消息内容：在我所在的地区，所在的天气，请问扫地机器人如何保养
+2026-03-22 19:43:29,396 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：get_user_location
+2026-03-22 19:43:29,397 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{}
+2026-03-22 19:43:29,398 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='广州' name='get_user_location' tool_call_id='call_e9edd89e4202424fbe0d72f7'
+2026-03-22 19:43:29,402 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有3条消息。
+2026-03-22 19:43:29,402 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：广州
+2026-03-22 19:43:33,199 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：get_weather
+2026-03-22 19:43:33,200 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'city': '广州'}
+2026-03-22 19:43:33,201 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='广州的天气是晴天，气温22度，风向北风。' name='get_weather' tool_call_id='call_9cdffd2320b6473da9b3e9cd'
+2026-03-22 19:43:33,205 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有5条消息。
+2026-03-22 19:43:33,205 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：广州的天气是晴天，气温22度，风向北风。
+2026-03-22 19:43:36,675 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：rag_summarize
+2026-03-22 19:43:36,675 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'query': '扫地机器人保养指南 广州 晴天 22度'}
+2026-03-22 19:43:40,674 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='扫地机器人保养需定期清理尘盒、滤网和滚刷，避免在潮湿环境中使用；广州晴天22度属适宜工作温度，可正常使用，但仍建议每次使用后检查边刷和传感器是否缠绕异物。' name='rag_summarize' tool_call_id='call_a914a355ef1f4bd89dbd2442'
+2026-03-22 19:43:40,675 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有7条消息。
+2026-03-22 19:43:40,678 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：扫地机器人保养需定期清理尘盒、滤网和滚刷，避免在潮湿环境中使用；广州晴天22度属适宜工作温度，可正常使用，但仍建议每次使用后检查边刷和传感器是否缠绕异物。
+2026-03-22 19:44:18,204 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有1条消息。
+2026-03-22 19:44:18,204 - agent - INFO -middleware.py:38 - [log_before_model]开始HumanMessage,消息内容：我想买一款3200元左右的扫地机器人，帮我推荐一下
+2026-03-22 19:44:20,921 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：rag_summarize
+2026-03-22 19:44:20,921 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'query': '3200元价位扫地机器人推荐 选购指南'}
+2026-03-22 19:44:25,336 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='在3200元价位，推荐选择具备激光导航、大吸力（如4000Pa以上）、扫拖一体、智能避障和APP控制功能的扫地机器人。优先考虑品牌如石头、科沃斯、追觅等，确保续航时间充足（约150分钟以上）并支持自动回充，同时关注尘盒容量与水箱容量是否满足日常清洁需求。' name='rag_summarize' tool_call_id='call_80fafe2ced824cdd9d391dc3'
+2026-03-22 19:44:25,338 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有3条消息。
+2026-03-22 19:44:25,344 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：在3200元价位，推荐选择具备激光导航、大吸力（如4000Pa以上）、扫拖一体、智能避障和APP控制功能的扫地机器人。优先考虑品牌如石头、科沃斯、追觅等，确保续航时间充足（约150分钟以上）并支持自动回充，同时关注尘盒容量与水箱容量是否满足日常清洁需求。
+2026-03-22 19:45:05,208 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有1条消息。
+2026-03-22 19:45:05,209 - agent - INFO -middleware.py:38 - [log_before_model]开始HumanMessage,消息内容：帮我生成一下报告
+2026-03-22 19:45:07,602 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：get_user_id
+2026-03-22 19:45:07,602 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{}
+2026-03-22 19:45:07,604 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='用户ID是1003' name='get_user_id' tool_call_id='call_0c4239b5f71b45dab16c3f92'
+2026-03-22 19:45:07,608 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有3条消息。
+2026-03-22 19:45:07,608 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：用户ID是1003
+2026-03-22 19:45:17,445 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：get_current_month
+2026-03-22 19:45:17,445 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{}
+2026-03-22 19:45:17,447 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='2025-03' name='get_current_month' tool_call_id='call_55eff094922e4e96ac34f69e'
+2026-03-22 19:45:17,449 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有5条消息。
+2026-03-22 19:45:17,451 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：2025-03
+2026-03-22 19:45:20,750 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：fill_context_for_report
+2026-03-22 19:45:20,751 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{}
+2026-03-22 19:45:20,753 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='fill_context_for_report' name='fill_context_for_report' tool_call_id='call_b05242cdabff4a00acc161de'
+2026-03-22 19:45:20,758 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有7条消息。
+2026-03-22 19:45:20,758 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：fill_context_for_report
+2026-03-22 19:45:26,059 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：fetch_external_data
+2026-03-22 19:45:26,059 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'user_id': '1003', 'month': '2025-03'}
+2026-03-22 19:45:26,061 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='{"特征": "90㎡ | 1狗 | 短毛地毯", "效率": "毛发清理:92%\\\\n地毯增压使用:16次/月", "耗材": "胶刷更换:已更换\\\\n尘盒容量:每日清理", "对比": "毛发处理效率前15%"}' name='fetch_external_data' tool_call_id='call_b49328a461f4429c899e6326'
+2026-03-22 19:45:26,063 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有9条消息。
+2026-03-22 19:45:26,063 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：{"特征": "90㎡ | 1狗 | 短毛地毯", "效率": "毛发清理:92%\\n地毯增压使用:16次/月", "耗材": "胶刷更换:已更换\\n尘盒容量:每日清理", "对比": "毛发处理效率前15%"}
+2026-03-22 19:45:29,952 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：rag_summarize
+2026-03-22 19:45:29,952 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'query': '宠物家庭扫地机器人保养建议'}
+2026-03-22 19:45:33,012 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='定期清理滚刷和边刷上的毛发缠绕，清空集尘盒，检查并清洁滤网，避免在潮湿地面使用，及时更换磨损配件。' name='rag_summarize' tool_call_id='call_b20b739e7c204b7b8f725bca'
+2026-03-22 19:45:33,013 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有11条消息。
+2026-03-22 19:45:33,014 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：定期清理滚刷和边刷上的毛发缠绕，清空集尘盒，检查并清洁滤网，避免在潮湿地面使用，及时更换磨损配件。
+2026-03-22 19:45:35,219 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：rag_summarize
+2026-03-22 19:45:35,219 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'query': '短毛地毯清洁技巧'}
+2026-03-22 19:45:38,697 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='短毛地毯清洁时，可使用吸尘器定期清理表面灰尘和杂物；如有污渍，用干净湿布蘸中性清洁剂轻轻擦拭，避免过度浸湿；清洁后应保持通风，使其自然晾干。' name='rag_summarize' tool_call_id='call_fedfa16c377046fdbeef1c35'
+2026-03-22 19:45:38,699 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有13条消息。
+2026-03-22 19:45:38,701 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：短毛地毯清洁时，可使用吸尘器定期清理表面灰尘和杂物；如有污渍，用干净湿布蘸中性清洁剂轻轻擦拭，避免过度浸湿；清洁后应保持通风，使其自然晾干。
+2026-03-22 20:02:50,067 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有1条消息。
+2026-03-22 20:02:50,067 - agent - INFO -middleware.py:38 - [log_before_model]开始HumanMessage,消息内容：你好啊
+2026-03-22 21:38:29,697 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有1条消息。
+2026-03-22 21:38:29,698 - agent - INFO -middleware.py:38 - [log_before_model]开始HumanMessage,消息内容：你好啊
+2026-03-22 21:38:48,394 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有1条消息。
+2026-03-22 21:38:48,394 - agent - INFO -middleware.py:38 - [log_before_model]开始HumanMessage,消息内容：我想问一下如何清洁
+2026-03-22 21:38:50,502 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：rag_summarize
+2026-03-22 21:38:50,502 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'query': '扫地机器人清洁维护方法'}
+2026-03-22 21:38:54,683 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='定期清理扫地机器人的尘盒、滤网和滚刷，避免毛发缠绕；及时擦拭传感器和充电触点，保持机身清洁；根据使用频率更换滤网和边刷；确保充电座周围无障碍物，并定期检查轮子是否被异物卡住。' name='rag_summarize' tool_call_id='call_481a239aa2a44bfdaf65dd25'
+2026-03-22 21:38:54,688 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有3条消息。
+2026-03-22 21:38:54,688 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：定期清理扫地机器人的尘盒、滤网和滚刷，避免毛发缠绕；及时擦拭传感器和充电触点，保持机身清洁；根据使用频率更换滤网和边刷；确保充电座周围无障碍物，并定期检查轮子是否被异物卡住。
+2026-03-22 22:55:43,699 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有1条消息。
+2026-03-22 22:55:43,699 - agent - INFO -middleware.py:38 - [log_before_model]开始HumanMessage,消息内容：你在干啥
