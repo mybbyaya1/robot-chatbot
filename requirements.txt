@@ -1,6 +1,6 @@
 streamlit==1.32.0
 langchain==0.1.20
-langchain-community==0.0.33
-dashscope==1.16.2
+langchain-community==0.0.38
+dashscope==1.17.0
 chromadb==0.5.4
 pyyaml==6.0
