@@ -3,6 +3,7 @@ import hashlib
 from utils.logger_handler import logger
 from langchain_core.documents import Document
 from langchain_community.document_loaders import PyPDFLoader,TextLoader
+from langchain_community.document_loaders import UnstructuredPowerPointLoader, UnstructuredExcelLoader, UnstructuredWordDocumentLoader
 
 def get_file_md5_hex(file_path:str):
     #如果文件不存在，返回None
@@ -44,3 +45,18 @@ def pdf_loader(file_path:str,passwd:str=None)->list[Document]:
 
 def txt_loader(file_path:str)->list[Document]:
     return TextLoader(file_path,encoding="utf-8").load()
+
+# 修正后的 PPT 加载器
+def ppt_loader(file_path:str)->list[Document]:
+    """加载 PowerPoint 文件（.pptx）"""
+    return UnstructuredPowerPointLoader(file_path,encoding="utf-8").load()
+
+# Excel 加载器
+def excel_loader(file_path:str)->list[Document]:
+    """加载 Excel 文件（.xlsx, .xls）"""
+    return UnstructuredExcelLoader(file_path,encoding="utf-8").load()
+
+# Word 加载器（两种选择）
+def word_loader(file_path:str)->list[Document]:
+    """加载 Word 文件（.docx）"""
+    return UnstructuredWordDocumentLoader(file_path,encoding="utf-8").load()

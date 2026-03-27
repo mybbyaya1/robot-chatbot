@@ -2,7 +2,7 @@ import time
 
 import streamlit as st
 from agent.react_agent import ReactAgent
-st.title("扫地机器人智能客服")
+st.title("mysql数据库学习机器人智能客服(微信：马jacket)")
 st.divider()
 
 if "agent" not in st.session_state:

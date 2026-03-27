@@ -6,7 +6,7 @@ from model.factory import embed_model
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import os
 
-from utils.file_handler import pdf_loader, txt_loader, listdir_with_allowed_type, get_file_md5_hex
+from utils.file_handler import pdf_loader, txt_loader, listdir_with_allowed_type, get_file_md5_hex,ppt_loader,excel_loader,word_loader
 from utils.logger_handler import logger
 from utils.path_tool import get_abs_path
 
@@ -24,6 +24,8 @@ class VectorStoreService:
             separators=chroma_conf["separators"],
             length_function=len,
         )
+        # 初始化时自动加载文档
+        self.load_document()
     def get_retriever(self):
         return self.vector_store.as_retriever(search_kargs={"k":chroma_conf["k"]})
     def load_document(self):
@@ -55,6 +57,12 @@ class VectorStoreService:
                 return pdf_loader(read_path)
             elif read_path.endswith(".txt"):
                 return txt_loader(read_path)
+            elif read_path.endswith(".pptx"):
+                return ppt_loader(read_path)
+            elif read_path.endswith(".xls"):
+                return excel_loader(read_path)
+            elif read_path.endswith(".docx"):
+                return word_loader(read_path)
             else:
                 return []
 

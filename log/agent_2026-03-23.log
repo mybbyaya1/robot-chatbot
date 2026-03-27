@@ -1,0 +1,9 @@
+2026-03-23 17:36:09,326 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有1条消息。
+2026-03-23 17:36:09,334 - agent - INFO -middleware.py:38 - [log_before_model]开始HumanMessage,消息内容：你好啊
+2026-03-23 17:51:35,693 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有1条消息。
+2026-03-23 17:51:35,693 - agent - INFO -middleware.py:38 - [log_before_model]开始HumanMessage,消息内容：如何进行故障排查
+2026-03-23 17:51:38,749 - agent - INFO -middleware.py:20 - [monitor_tool工具调用]开始:执行工具：rag_summarize
+2026-03-23 17:51:38,749 - agent - INFO -middleware.py:21 - [monitor_tool工具调用]开始:传入参数：{'query': '扫地机器人 故障排查'}
+2026-03-23 17:51:47,995 - agent - INFO -middleware.py:24 - [monitor_tool工具调用]成功:返回结果：content='扫地机器人常见故障包括无法启动、清扫不彻底、充电异常、边刷或主刷不转、机器卡住或无法返回充电座等。排查时应首先检查电源是否接通、电池是否耗尽；清理滚刷、边刷及传感器上的缠绕物和灰尘；确认充电座接触良好且无遮挡；重启设备或恢复出厂设置；若问题持续，建议联系售后或专业维修人员。' name='rag_summarize' tool_call_id='call_75bd055e264b4ec6b2e5fb1f'
+2026-03-23 17:51:47,997 - agent - INFO -middleware.py:37 - [log_before_model]开始执行任务：带有3条消息。
+2026-03-23 17:51:47,997 - agent - INFO -middleware.py:38 - [log_before_model]开始ToolMessage,消息内容：扫地机器人常见故障包括无法启动、清扫不彻底、充电异常、边刷或主刷不转、机器卡住或无法返回充电座等。排查时应首先检查电源是否接通、电池是否耗尽；清理滚刷、边刷及传感器上的缠绕物和灰尘；确认充电座接触良好且无遮挡；重启设备或恢复出厂设置；若问题持续，建议联系售后或专业维修人员。

@@ -1,0 +1,96 @@
+第十章  存储过程6---游标
+一。什么是游标
+生活例子：超市结账
+游标相当于收银员，如果购买了10件商品，那么收银员
+会对10个商品一一扫描
+对应到mysql中，相当于每表中的每一条记录进行单独处理
+
+二。数据库中的游标
+游标是 MySQL 中一种逐行访问查询结果的工具。想象你有一张学生表，游标就像你的手指，一行一行往下滑动，每次只聚焦当前行的数据。
+
+三。游标的使用步骤（类比收银员）
+1。声明游标（相当于收银员准备开始扫描商品，扫描的机器没打开）
+语法：
+DECLARE 游标名称 CURSOR FOR sql语句;
+总结：cursor中文含义是游标
+For固定的表示游标需要操作的数据，后面跟sql语句
+例如：我需要对学生表中的每一行数据处理
+declare stucur cursor for select * from 学生表;
+
+2.打开游标（相当于收银员准备开始扫描商品，扫描的机器打开）
+语法:
+open 游标名称;
+
+3.使用游标（一行一行的获取数据）
+语法:
+fetch 游标名称 into 字段名1,字段2，字段3;
+例如：
+获取学生表中第一行中学号和姓名,年龄
+fetch stucur into 学号,姓名,年龄;
+此处学号,姓名,年龄，请使用英文变量名，所以修改为：
+fetch stucur into xh,xm,nl;
+注意：使用前需要声明变量
+4.处理数据
+语法：
+每拿到一条学生记录，我需要统计年龄之和
+set total=total+年龄
+
+5.关闭游标
+结账完毕，收银员关闭扫描器：
+语法：
+CLOSE 游标名;
+
+实例1：获取学生表第一行中的年龄
+create PROCEDURE mycur1()
+BEGIN
+		declare xuehao char(9);
+		declare xingming varchar(8);
+		declare nianling int;
+		
+    #1.声明游标(扫描器没打开)
+    declare cur cursor for select 学号,姓名,年龄 from 学生表;
+    #2.打开游标(扫描器打开)
+    open cur;
+    #3.使用游标(表示取出第一条记录，记录包含学号,姓名,年龄
+    #，这条记录给它起了一个名称cur)
+    FETCH cur INTO xuehao,xingming,nianling;
+
+    #4.关闭游标
+    close cur;
+    select nianling;
+end;
+
+call mycur1();
+
+实例2：获取学生表每一行中的年龄，相加
+create PROCEDURE mycur2()
+BEGIN
+     DECLARE done INT DEFAULT FALSE;
+    DECLARE total int DEFAULT 0;
+		
+		declare xuehao char(9);
+		declare xingming varchar(8);
+		declare nianling int default 0;
+		
+    #1.声明游标(扫描器没打开)
+    declare cur cursor for select 学号,姓名,年龄 from 学生表;
+		 -- 定义结束标记
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    #2.打开游标(扫描器打开)
+    open cur;
+    #3.使用游标(表示取出第一条记录，记录包含学号,姓名,年龄
+    #，这条记录给它起了一个名称cur)
+     read_loop: LOOP
+       FETCH cur INTO xuehao,xingming,nianling;
+        IF done THEN
+            LEAVE read_loop;
+        END IF;
+        -- 处理数据：累加年龄
+        SET total = total + nianling;
+    END LOOP;
+    #4.关闭游标
+    close cur;
+    select total;
+end;
+
+call mycur2()
